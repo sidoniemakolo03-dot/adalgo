@@ -89,15 +89,14 @@ export const mention = (note) => {
  * @example fizzbuzz(15) → "FizzBuzz"
  */
 export const fizzbuzz = (n) => {
-  function fizzbuzz(n) {
-  if (n % 15 === 0) {
-    return "FizzBuzz"
+    if (n % 3 === 0 && n % 5 === 0) {
+    return "FizzBuzz";
   } else if (n % 3 === 0) {
-    return "Fizz"
+    return "Fizz";
   } else if (n % 5 === 0) {
-    return "Buzz"
+    return "Buzz";
   } else {
-    return String(n)
+    return String(n);
   }
-}
-}
+};
+
