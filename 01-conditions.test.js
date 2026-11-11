@@ -38,11 +38,39 @@ describe("max", () => {
 // Même pattern que max — écris les tests pour chaque mention.
 // Cas à couvrir : une note dans chaque tranche, et la valeur frontière 16.
 describe("mention", () => {
-  // à compléter
-})
+  it("retourne Très bien pour 17", () => {
+    expect(mention(17)).toBe("Très bien");
+  });
+  it("retourne Bien pour 15", () => {
+    expect(mention(15)).toBe("Bien");
+  });
+  it("retourne Assez bien pour 13", () => {
+    expect(mention(13)).toBe("Assez bien");
+  });
+  it("retourne Passable pour 11", () => {
+    expect(mention(11)).toBe("Passable");
+  });
+  it("retourne Insuffisant pour 8", () => {
+    expect(mention(8)).toBe("Insuffisant");
+  });
+  it("retourne Très bien pour la frontière 16", () => {
+    expect(mention(16)).toBe("Très bien");
+  });
+});
 
 // [FACULTATIF] Même pattern — à toi.
 // Cas à couvrir : multiple de 3, multiple de 5, multiple des deux, autre.
 describe("fizzbuzz", () => {
-  // à compléter
-})
+  it("retourne Fizz pour un multiple de 3", () => {
+    expect(fizzbuzz(3)).toBe("Fizz");
+  });
+  it("retourne Buzz pour un multiple de 5", () => {
+    expect(fizzbuzz(5)).toBe("Buzz");
+  });
+  it("retourne FizzBuzz pour un multiple de 3 et 5", () => {
+    expect(fizzbuzz(15)).toBe("FizzBuzz");
+  });
+  it("retourne le nombre en texte sinon", () => {
+    expect(fizzbuzz(7)).toBe("7");
+  });
+});
