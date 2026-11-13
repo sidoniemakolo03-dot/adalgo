@@ -74,3 +74,4 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(7)).toBe("7");
   });
 });
+
